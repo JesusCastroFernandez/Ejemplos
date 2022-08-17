@@ -13,6 +13,6 @@ public class Repositorio {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
-       Bucles bu =  new Bucles;
+       Bucles bu =  new Bucles();
     }
 }
