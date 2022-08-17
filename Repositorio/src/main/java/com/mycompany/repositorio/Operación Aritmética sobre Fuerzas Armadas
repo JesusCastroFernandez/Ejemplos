@@ -1,0 +1,17 @@
+public class PromedioFuerzas{
+  public static void main(String args[]){
+  
+   int tierra = 75822;
+   int armada = 20838;
+   int aire = 20900;
+   int promedio = 0;
+
+   promedio = (tierra + armada + aire) / 3;
+
+   if(promedio >= 40000){
+     System.out.println("Las Fuerzas son suficientes" + promedio);
+   } else {
+     System.out.println("Las Fuerzas son insuficientes" + promedio);
+  }
+ }
+}

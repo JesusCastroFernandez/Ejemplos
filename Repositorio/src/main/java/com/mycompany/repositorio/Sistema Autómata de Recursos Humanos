@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class Sistema{
+  public static void main(String args[]){
+
+   Scanner entrada = new Scanner(System.in);
+   String nombre = "";
+   in clave = 0, antiguedad = 0;
+   
+   System.out.println("********************************");
+   System.out.println("Bienvenido al sistema despido");
+   System.out.println("********************************");
+   System.out.println("");
+   System.out.println("");
+
+   System.out.print("¿Cual es el nombre del empresario: ");
+   nombre = entrada.nextLine();
+   System.out.println("");
+
+   System.out.print("¿Cuanto tiempo de servicio tiene el empresario": ");
+   antiguedad = entrada.nextInt();
+   System.out.println("");
+
+   System.out.print("¿Cual es la clave del empresario?: ");
+   clave = entrada.netxInt();
+   System.out.println("");
+
+   if(clave == 1){
+
+     if(antiguedad == 1){
+       System-out.println("El empresario " + nombre + " tiene derecho a 6 días por día trabajado") 
+     } else if(antiguedad >= 2 && antiguedad <=6){
+       System-out.println("El empresario " + nombre + " tiene derecho a 14 días por día trabajado")
+     } else if(antiguedad >= 7){
+       System-out.println("El empresario " + nombre + " tiene derecho a 22 días por día trabajado")
+     }
+   } else if(clave ==2){
+  
+     if(antiguedad == 1){
+       System-out.println("El empresario " + nombre + " tiene derecho a 7 días por día trabajado") 
+     } else if(antiguedad >= 2 && antiguedad <=6){
+       System-out.println("El empresario " + nombre + " tiene derecho a 15 días por día trabajado")
+     } else if(antiguedad >= 7){
+       System-out.println("El empresario " + nombre + " tiene derecho a 20 días por día trabajado")
+     }
+   } else if(clave ==3){
+
+      if(antiguedad == 1){
+       System-out.println("El empresario " + nombre + " tiene derecho a 10 días por día trabajado") 
+     } else if(antiguedad >= 2 && antiguedad <=6){
+       System-out.println("El empresario " + nombre + " tiene derecho a 20 días por día trabajado")
+     } else if(antiguedad >= 7){
+       System-out.println("El empresario " + nombre + " tiene derecho a 30 días por día trabajado")
+     }
+   } else {
+    System.out.println("Error, la clave de departamento es incorrecta.");  
+ }
+}

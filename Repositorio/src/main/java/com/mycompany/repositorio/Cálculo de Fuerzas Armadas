@@ -1,0 +1,11 @@
+public class Fuerzas{
+  public static void main(String args[]){
+
+  int personal = 133282; 
+  int reserva = 4470;
+  int resultado  = 0;
+
+  resultado = personal + reserva;
+  System.out.println("El valor de tus fuerzas es: " + resultado);
+ }
+}
